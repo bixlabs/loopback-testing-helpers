@@ -35,7 +35,8 @@ module.exports = function (app) {
         default:
           break;
       }
-      url = app.get('restApiRoot') + url;
+
+      url = url.match(new RegExp('^' + app.get('restApiRoot'))) ? url : app.get('restApiRoot') + url;
 
       return request(app)[verb](url)[verbSendMethod](args);
     };
