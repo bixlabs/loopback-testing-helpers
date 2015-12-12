@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/bixlabs/loopback-testing-helpers/issues"
   },
-  "homepage": "https://github.com/bixlabs/loopback-testing-helpers#readme"
+  "homepage": "https://github.com/bixlabs/loopback-testing-helpers#readme",
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "supertest": "^1.1.0"
+  }
 }
