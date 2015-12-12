@@ -1,0 +1,23 @@
+{
+  "name": "loopback-testing-helpers",
+  "version": "1.0.0",
+  "description": "Helpers to test loopback remote methods",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bixlabs/loopback-testing-helpers.git"
+  },
+  "keywords": [
+    "Loopback",
+    "test",
+    "testing"
+  ],
+  "author": "Julian Reyes Escrigas <jreyes@bixlabs.com>",
+  "bugs": {
+    "url": "https://github.com/bixlabs/loopback-testing-helpers/issues"
+  },
+  "homepage": "https://github.com/bixlabs/loopback-testing-helpers#readme"
+}
