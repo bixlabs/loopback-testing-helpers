@@ -1,6 +1,11 @@
 # Loopback remote testing helpers
 
+The purpose of this library is to enable easy unit testing, mimicking the angular SDK behavior. also integrating with supertest library
+
 ## How to use
+
+### Calling a remote method
+
 ```js
 var app = require('./server/server');
 var h = require('loopback-testing-helpers')(app);
