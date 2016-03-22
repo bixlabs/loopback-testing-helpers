@@ -1,5 +1,7 @@
 # Loopback remote testing helpers
 
+[![Code Climate](https://codeclimate.com/github/bixlabs/loopback-testing-helpers/badges/gpa.svg)](https://codeclimate.com/github/bixlabs/loopback-testing-helpers)
+
 The purpose of this library is to enable easy unit testing, mimicking the angular SDK behavior. also integrating with supertest library
 
 ## How to use
