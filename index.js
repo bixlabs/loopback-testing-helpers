@@ -18,10 +18,11 @@ module.exports = function (app) {
 
     helper[method.name] = function (args) {
       args = args || {};
+      var newUrl = url;
 
       var replaceKeys = function(key) {
         var keyValue = args[key];
-        url = url.replace(':' + key, keyValue);
+        newUrl = newUrl.replace(':' + key, keyValue);
       };
 
       _.keysIn(args).forEach(replaceKeys);
@@ -36,9 +37,9 @@ module.exports = function (app) {
           break;
       }
 
-      url = url.match(new RegExp('^' + app.get('restApiRoot'))) ? url : app.get('restApiRoot') + url;
+      newUrl = newUrl.match(new RegExp('^' + app.get('restApiRoot'))) ? newUrl : app.get('restApiRoot') + newUrl;
 
-      return request(app)[verb](url)[verbSendMethod](args);
+      return request(app)[verb](newUrl)[verbSendMethod](args);
     };
   });
 
