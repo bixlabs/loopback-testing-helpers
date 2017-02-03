@@ -1,6 +1,6 @@
 {
   "name": "loopback-testing-helpers",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Helpers to test loopback remote methods",
   "main": "index.js",
   "scripts": {
